@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Warehouse.Models.Document">
+    <Position X="6.25" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAEAAAAAAAAAAAIAAAAQAAQAAAAAAAAA=</HashCode>
+      <FileName>Models\Document.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Warehouse.Models.Product">
+    <Position X="11.5" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAIAAAAAQAAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Product.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Warehouse.Models.ProductDocuments">
+    <Position X="9" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAACAAgAAAAAAAAAAAAAAAQAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Models\ProductDocuments.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Document" />
+      <Property Name="Product" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Warehouse.Models.WarehouseContext">
+    <Position X="17.75" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAEIBAAAACQAAAAAAAAAQ=</HashCode>
+      <FileName>Models\WarehouseContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Warehouse.Presenters.AddEditProductPresenter">
+    <Position X="2.5" Y="0.75" Width="1.5" />
+    <AssociationLine Name="productFacade" Type="Warehouse.Fasades.IProductFacade&lt;T&gt;">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.814" Y="2.254" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAACAAAAAAAAAACAAAAAAAAAEAAAAAAAAAI=</HashCode>
+      <FileName>Presenters\AddEditProductPresenter.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="addEditProductForm" />
+      <Field Name="productFacade" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Warehouse.Presenters.AddProductToDocumentPresenter">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <AssociationLine Name="productFacade" Type="Warehouse.Fasades.IProductFacade&lt;T&gt;">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="4.087" Y="0.132" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAAAAQAAAAAAAAAAAEAAAAAAIAgI=</HashCode>
+      <FileName>Presenters\AddProductToDocumentPresenter.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="addProductToDocumentForm" />
+      <Field Name="productFacade" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Warehouse.Presenters.AddViewDocumentPresenter">
+    <Position X="14.25" Y="0.5" Width="1.5" />
+    <AssociationLine Name="productFacade" Type="Warehouse.Fasades.IProductFacade&lt;T&gt;">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="8.795" Y="0.108" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AQAAAgABAAAQAAAAAAAAQAAAAAAAAAAAEABAAAAAAAI=</HashCode>
+      <FileName>Presenters\AddViewDocumentPresenter.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="addViewDocumentForm" />
+      <Field Name="documentFacade" />
+      <Field Name="productFacade" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Warehouse.Presenters.MainPresenter">
+    <Position X="21" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>YAAAAAIBAAAIAAAAggAIQAAAAAAAAAAIEAAAAAAABAI=</HashCode>
+      <FileName>Presenters\MainPresenter.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="documentFacade" />
+      <Field Name="mainForm" />
+      <Field Name="productFacade" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Warehouse.AddEditProductForm" HideInheritanceLine="true">
+    <Position X="4" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAgAAAAgACAIAAAEAISABACCAAgAAAAAKAAAAABAACA=</HashCode>
+      <FileName>AddEditProductForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Warehouse.AddProductToDocumentForm" HideInheritanceLine="true">
+    <Position X="6" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAgAAAAACAIAAAAEACAQgACAAAAgAAAAAAQCAAIAAA=</HashCode>
+      <FileName>AddProductToDocumentForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Warehouse.AddViewDocumentForm" HideInheritanceLine="true">
+    <Position X="17.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAQAAABKAYAAAMIASAzBACAAAAACAJIAAQCAAIAAA=</HashCode>
+      <FileName>AddViewDocumentForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Warehouse.MainForm" HideInheritanceLine="true">
+    <Position X="23.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>MAAgQA4gBCAKAAAJgQaIQAAKAACEAABAAgAQCQBIBAA=</HashCode>
+      <FileName>MainForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Warehouse.Fasades.DocumentFacade">
+    <Position X="20.5" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAACAAAAAAAQAAAAAAAAEAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>Fasades\DocumentFacade.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="dbContext" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Warehouse.Fasades.ProductFacade">
+    <Position X="15.25" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAEAAACAAAAAAAQAAAAAAAAEAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>Fasades\ProductFacade.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="dbContext" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="Warehouse.Presenters.IPresenter">
+    <Position X="12" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Presenters\IPresenter.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Warehouse.Fasades.IDataFacade&lt;T&gt;">
+    <Position X="2.75" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAACAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>Fasades\IDataFacade.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Warehouse.Fasades.IDocumentFacade&lt;T&gt;">
+    <Position X="3.75" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Fasades\IDocumentFacade.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Warehouse.Fasades.IProductFacade&lt;T&gt;">
+    <Position X="1.25" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Fasades\IProductFacade.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Warehouse.Fasades.IUpdatable&lt;T&gt;">
+    <Position X="1" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Fasades\IUpdatable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
